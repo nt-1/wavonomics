@@ -214,14 +214,6 @@ MEDIA_URL = '/media/'
 
 # end of image of the day copy paste
 
-# Adding S3 storage bindings
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# creds for IAM user wavonomics  arn:aws:iam::694556138631:user/wavonomics
-AWS_ACCESS_KEY_ID = 'AKIAJKF45JAI734FNGIQ'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME =
-
 # # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # # trailing slash.
 # # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
@@ -278,8 +270,6 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "django.contrib.sitemaps",
     "django.contrib.staticfiles",
-    # to deal with S3 storage for static
-    "storages",
     "nova",
     "mezzanine.boot",
     "mezzanine.conf",
