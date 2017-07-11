@@ -203,7 +203,6 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, "www", STATIC_URL.strip("/"))
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
-    os.path.join(PROJECT_ROOT, 'wavonomics/static'),
     os.path.join(PROJECT_ROOT, 'nova/static'),
 )
 
