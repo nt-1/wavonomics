@@ -202,8 +202,8 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip("/"))
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'wavonomics/static'),
     os.path.join(PROJECT_ROOT, 'nova/static'),
+    os.path.join(PROJECT_ROOT, 'wavonomics/static'),
 )
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
