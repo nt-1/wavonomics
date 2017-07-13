@@ -3,9 +3,13 @@ branch-defaults:
     environment: django-env
     group_suffix: null
   master:
-    environment: django-env
+    environment: wavonomics-django-test
+    group_suffix: null
 environment-defaults:
   django-env:
+    branch: null
+    repository: null
+  wavonomics-django-test:
     branch: null
     repository: null
 global:
