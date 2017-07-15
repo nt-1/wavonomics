@@ -168,7 +168,7 @@ else:
             # Not used with sqlite3.
             "USER": "antoinef",
             # Not used with sqlite3.
-            "PASSWORD": "932900",
+            "PASSWORD": "azerty",
             # Set to empty string for localhost. Not used with sqlite3.
             'HOST': '127.0.0.1',
             'PORT': '5432',

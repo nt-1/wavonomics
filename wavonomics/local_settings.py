@@ -2,7 +2,7 @@ import os
 # This file is exec'd from settings.py, so it has access to and can
 # modify all the variables in settings.py.
 
-DEBUG = True
+DEBUG = False
 
 # Make these unique, and don't share it with anybody.
 SECRET_KEY = "z19egbpfu0n=8n#8agv@x)6nfatgh)t4m6wb(!22n4bn34j%6x"
@@ -42,7 +42,7 @@ else:
             # Not used with sqlite3.
             "USER": "antoinef",
             # Not used with sqlite3.
-            "PASSWORD": "932900",
+            "PASSWORD": "azerty",
             # Set to empty string for localhost. Not used with sqlite3.
             'HOST': '127.0.0.1',
             'PORT': '5432',
