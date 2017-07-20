@@ -2,7 +2,7 @@ import os
 # This file is exec'd from settings.py, so it has access to and can
 # modify all the variables in settings.py.
 
-DEBUG = True
+DEBUG = False
 
 # Make these unique, and don't share it with anybody.
 SECRET_KEY = "z19egbpfu0n=8n#8agv@x)6nfatgh)t4m6wb(!22n4bn34j%6x"
