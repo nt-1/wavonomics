@@ -10,7 +10,6 @@ chardet==3.0.4
 cryptography==1.9
 Django==1.9.12
 django-contrib-comments==1.8.0
-django-storages==1.6.3
 docutils==0.13.1
 enum34==1.1.6
 filebrowser-s3==1.0.0
@@ -25,7 +24,6 @@ jmespath==0.9.3
 Mezzanine==4.2.3
 oauthlib==2.0.2
 olefile==0.44
-paramiko==2.2.1
 Pillow==4.1.1
 psycopg2==2.7.1
 pyasn1==0.2.3
