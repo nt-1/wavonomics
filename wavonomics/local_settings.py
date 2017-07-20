@@ -86,7 +86,7 @@ if USE_S3:
     AWS_SECRET_ACCESS_KEY = "KrINcQQh28icZsL+kLgSiGB7/INhxEHFpyhjdpvy"
     AWS_STORAGE_BUCKET_NAME = "wavonomics-media"
 
-    AWS_LOCATION = env('AWS_LOCATION')
+    AWS_LOCATION = "media"
     FILEBROWSER_DIRECTORY = AWS_LOCATION
 
     MEDIA_ROOT = ''
