@@ -263,6 +263,7 @@ INSTALLED_APPS = (
     "django.contrib.sitemaps",
     "django.contrib.staticfiles",
     "nova",
+    "filebrowser_s3",
     "mezzanine.boot",
     "mezzanine.conf",
     "mezzanine.core",

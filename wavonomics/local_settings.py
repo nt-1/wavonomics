@@ -2,7 +2,7 @@ import os
 # This file is exec'd from settings.py, so it has access to and can
 # modify all the variables in settings.py.
 
-DEBUG = False
+DEBUG = True
 
 # Make these unique, and don't share it with anybody.
 SECRET_KEY = "z19egbpfu0n=8n#8agv@x)6nfatgh)t4m6wb(!22n4bn34j%6x"
@@ -71,3 +71,29 @@ else:
 #     "SECRET_KEY": SECRET_KEY,
 #     "NEVERCACHE_KEY": NEVERCACHE_KEY,
 # }
+
+# Determine which storage solution to use. Typically, you
+# want filesystem storage for local dev work, but S3 storage
+# for staging/production instances.
+# USE_S3 = env('USE_S3')
+
+USE_S3 = True
+
+if USE_S3:
+    DEFAULT_FILE_STORAGE = 'filebrowser_s3.storage.S3MediaStorage'
+
+    AWS_ACCESS_KEY_ID = "AKIAIRL77KGJXBX2KVIQ"
+    AWS_SECRET_ACCESS_KEY = "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"
+    AWS_STORAGE_BUCKET_NAME = "wavonomics-media"
+
+    AWS_LOCATION = env('AWS_LOCATION')
+    FILEBROWSER_DIRECTORY = AWS_LOCATION
+
+    MEDIA_ROOT = ''
+    MEDIA_URL = 'https://s3-us-west-1.amazonaws.com/wavonomics-media/'
+
+    # AWS_S3_CUSTOM_DOMAIN = env('AWS_S3_CUSTOM_DOMAIN', default=None)
+    # if AWS_S3_CUSTOM_DOMAIN is None:
+    #     MEDIA_URL = 'https://s3-us-west-1.amazonaws.com/wavonomics-media/'
+    # else:
+    #     MEDIA_URL = 'https://' + AWS_S3_CUSTOM_DOMAIN + '/'
